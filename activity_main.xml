@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <RadioGroup
+        android:id="@+id/rg_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/bt_mima"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mimadenglu"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/bt_yanzhengma"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/yanzhengmadenglu"
+            />
+
+    </RadioGroup>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+
+        android:id="@+id/tv_phoneNumber"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="@string/phone_number"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/et_phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号码"
+        android:inputType="number"
+        android:maxLength="11"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="@string/phone_number"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            />
+        <Button
+            android:id="@+id/bt_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgetPassword"
+            />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_rememberPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rememberPassword"
+        />
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        />
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="@string/newRegister"
+        />
+
+</LinearLayout>

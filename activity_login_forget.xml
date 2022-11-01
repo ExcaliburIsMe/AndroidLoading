@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginForgetActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+
+            android:id="@+id/tv_phoneNumber2"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="@string/phone_number"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/et_phoneNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/tv_newPassword"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/newPassword" />
+
+        <EditText
+            android:id="@+id/et_newPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintNewPassword"
+            android:inputType="number"
+            android:maxLength="11" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+
+            android:id="@+id/tv_confirmPassword"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="@string/confirmPassword"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/et_confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintConfirmPassword"
+            android:inputType="number"
+            android:maxLength="11"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_yanzhengma2"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="@string/yanzhengma"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/et_yanzhengma2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintYanzhengma"
+            android:inputType="textPassword"
+            />
+        <Button
+            android:id="@+id/bt_sent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yanzhengmafasong"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        />
+</LinearLayout>
